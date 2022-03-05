@@ -1,0 +1,94 @@
+
+	<!-- saved from url=(0049)file:///D:/waste/Projects/HTML/JAVASCRIPT/vv.html -->
+	<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body style="background-color: black;" container="">
+	<center>              
+			<link rel="stylesheet" href="C:\Users\clc\Desktop\project html\style.css">
+		<!-- Required meta tags -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+		<title>calculator</title>
+	  
+	  
+	<h1 style="color: white;"><u> CALCULATOR </u></h1><br><br><br>
+
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		-->
+							<script>
+				function add()
+			{
+					var a=parseInt(document.getElementById('id1').value);
+					var b=parseInt(document.getElementById('id2').value);
+					var z= a + b 
+					document.getElementById("p1").innerHTML=z;
+			}
+
+			function sub()
+			{
+					var a=parseInt(document.getElementById('id1').value);
+					var b=parseInt(document.getElementById('id2').value);
+					var z= a - b 
+					document.getElementById("p1").innerHTML=z;
+			}
+			
+			function mul()
+			{
+					var a=parseInt(document.getElementById('id1').value);
+					var b=parseInt(document.getElementById('id2').value);
+					var z= a * b 
+					document.getElementById("p1").innerHTML=z;
+			}
+
+			function divide()
+			{
+					var a=parseInt(document.getElementById('id1').value);
+					var b=parseInt(document.getElementById('id2').value);
+					var z= a / b 
+					document.getElementById("p1").innerHTML=z;
+			}
+
+			function pie()
+			{
+					var a=parseInt(document.getElementById('id1').value);
+					var b=parseInt(document.getElementById('id2').value);
+					var z= a * 22/7
+					document.getElementById("p1").innerHTML=z;
+			}
+			
+			function square()
+			{
+					var a=parseInt(document.getElementById('id1').value);
+					var b=parseInt(document.getElementById('id2').value);
+					var z= a * a
+					document.getElementById("p1").innerHTML=z;
+			}
+
+			</script>
+		
+			<input type="number" id="id1" maxlength="20">
+			<input type="number" id="id2" maxlength="20">
+	<br><br><br><br><br><br><table>   
+		
+		<tbody><tr><td><button onclick="add()">sum</button></td>
+		<td><button onclick="sub()">substract</button></td>
+		<td><button onclick="mul()">multiply</button></td>
+		<td><button onclick="divide()">divide</button></td>
+		<td><button onclick="pie()">pie</button></td>
+		<td><button onclick="square()">square</button></td>
+
+	</tr></tbody></table>
+	<h1 id="p1" style="color: white;"><u>ANSWER</u></h1>
+	</center>
+
+	</body></html>
